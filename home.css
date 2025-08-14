@@ -1,0 +1,137 @@
+/* أنماط عامة */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+    direction: rtl; /* لأن النصوص بالعربية */
+}
+
+/* عنوان الموقع */
+.pista_title {
+    color: #006400; /* الأخضر الغامق */
+    font-size: 3em;
+    margin-top: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* قائمة التنقل */
+.pages {
+    margin: 20px auto;
+    width: 80%;
+}
+
+.pages nav table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0 auto;
+}
+
+.pages th {
+    padding: 15px;
+    background-color: #006400; /* الأخضر الغامق */
+    border: 1px solid #004d00;
+}
+
+.pages th a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2em;
+    display: block;
+}
+
+.pages th:hover {
+    background-color: #004d00; /* أخضر أغمق عند التحويم */
+    transition: background-color 0.3s;
+}
+
+/* جملة الترحيب */
+.Welcome_sentence {
+    background-color: #006400; /* الأخضر الغامق */
+    color: white;
+    padding: 20px;
+    margin: 20px auto;
+    width: 80%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.Welcome_sentence h3 {
+    margin: 0;
+    font-size: 1.5em;
+}
+
+/* الصورة الرئيسية */
+.main_image {
+    max-width: 90%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    border: 3px solid #006400; /* إطار أخضر غامق */
+}
+
+/* عنوان وسائل التواصل */
+.socialmedia {
+    color: #006400; /* الأخضر الغامق */
+    font-size: 1.8em;
+    margin-top: 30px;
+    text-decoration: underline;
+}
+
+/* روابط وسائل التواصل */
+.faceinsta {
+    margin: 20px auto;
+    padding: 15px;
+    background-color: #006400; /* الأخضر الغامق */
+    width: 80%;
+    border-radius: 10px;
+}
+
+.faceinsta a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.3em;
+    margin: 0 15px;
+    padding: 8px 15px;
+    display: inline-block;
+}
+
+.faceinsta a:hover {
+    text-decoration: underline;
+    background-color: #004d00; /* أخضر أغمق عند التحويم */
+    border-radius: 5px;
+    transition: all 0.3s;
+}
+
+/* تأثيرات للهواتف */
+@media (max-width: 768px) {
+    .pista_title {
+        font-size: 2em;
+    }
+    
+    .pages th {
+        padding: 10px;
+        display: block;
+        width: 100%;
+        margin-bottom: 5px;
+    }
+    
+    .Welcome_sentence h3 {
+        font-size: 1.2em;
+    }
+    
+    .main_image {
+        width: 95%;
+    }
+    
+    .faceinsta a {
+        display: block;
+        margin: 10px 0;
+    }
+}
+
+
+
+

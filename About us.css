@@ -1,0 +1,75 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 20px;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+/* Dark Green Color Scheme */
+:root {
+    --dark-green: #006400;
+    --light-green: #e8f5e9;
+    --gold: #d4af37;
+}
+
+/* Arabic Text Styling */
+div:last-of-type p {
+    text-align: right;
+    direction: rtl;
+    font-size: 18px;
+    color: var(--dark-green);
+    padding: 15px;
+    background-color: var(--light-green);
+    border-right: 4px solid var(--dark-green);
+    border-radius: 5px;
+}
+
+/* English Text Styling */
+.enSentence {
+    text-align: center;
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: #f0f0f0;
+    border-left: 4px solid var(--dark-green);
+    border-radius: 5px;
+}
+
+/* Horizontal Line */
+.hr {
+    border: 0;
+    height: 2px;
+    background: linear-gradient(to right, transparent, var(--dark-green), transparent);
+    margin: 30px 0;
+}
+
+/* Image Styling */
+.shopImg {
+    display: block;
+    margin: 0 auto;
+    border: 5px solid var(--dark-green);/* إطار للصورة */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;/* تأثير حركي عند التحويم */
+}
+
+.shopImg:hover {
+    transform: scale(1.02); /* تكبير الصورة قليلاً عند التحويم */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .shopImg {
+        width: 100%;
+        max-width: 400px;
+        height: auto;
+    }
+    
+    div p, .enSentence {
+        font-size: 14px;
+    }
+}
